@@ -1,0 +1,34 @@
+@font-face { font-family: Lora; src: url(fonts/Lora-Italic.ttf); font-style: italic; font-weight: 400 700; }
+:root { --paper: #f6f1e7; --card: #fdfbf7; --ink: #3b342c; --dim: #7d7468; --gold: #a8731a; --accent: #2f9a78; --line: #e2d8c8; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: var(--accent); }
+.top { display: flex; justify-content: space-between; align-items: center; padding: 14px 6vw; border-bottom: 1px solid var(--line); background: var(--card); }
+.brand { font: italic 700 26px Lora, serif; color: var(--ink); text-decoration: none; }
+nav a { margin-left: 22px; color: var(--ink); text-decoration: none; font-weight: 600; }
+main { max-width: 1080px; margin: 0 auto; padding: 0 5vw 40px; }
+h1, h2, h3 { font-family: Lora, serif; font-style: italic; line-height: 1.2; }
+.hero { text-align: center; padding: 50px 0 10px; }
+.hero h1 { font-size: 64px; margin: 0; }
+.tag { color: var(--gold); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; margin: 6px 0 18px; }
+.lead { max-width: 720px; margin: 0 auto 24px; font-size: 19px; }
+.buttons { margin: 18px 0 28px; }
+.btn { display: inline-block; margin: 6px; padding: 12px 26px; border-radius: 6px; border: 1px solid var(--line); background: var(--card);
+       color: var(--ink); text-decoration: none; font: italic 700 19px Lora, serif; }
+.btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.btn.disabled { opacity: .8; }
+.heroimg, .shots img { width: 100%; border-radius: 10px; border: 1px solid var(--line); box-shadow: 0 6px 20px rgba(60,40,20,.12); }
+.feats { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.feat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 18px; }
+.feat h3 { margin: 4px 0 6px; color: var(--gold); }
+.feat p { margin: 0; color: var(--dim); }
+.shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+figure { margin: 0; } figcaption { color: var(--dim); font-size: 14px; margin-top: 4px; }
+.small, .faint { color: var(--dim); font-size: 14px; text-align: center; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; background: var(--card); }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+.facts th { width: 160px; }
+.policy h1 { margin-top: 40px; } .policy h2 { margin-top: 28px; color: var(--gold); }
+code { background: #efe7da; padding: 1px 5px; border-radius: 4px; font-size: 90%; }
+footer { border-top: 1px solid var(--line); padding: 18px 6vw; text-align: center; color: var(--dim); font-size: 14px; }
+@media (max-width: 600px) { .hero h1 { font-size: 44px; } nav a { margin-left: 12px; } }
